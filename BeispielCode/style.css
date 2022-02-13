@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: white;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body div#HeaderPlatz {
+  height: 6rem;
+  width: 100%;
+}
+
+body div#MainContainer {
+  min-height: 100%;
+  overflow: auto;
+}
+
+body header {
+  border-bottom: 1px solid black;
+  text-align: left;
+  position: fixed;
+  height: 6rem;
+  width: 100%;
+  background-color: white;
+}
+
+body header nav {
+  display: inline-block;
+}
+
+body header nav ul {
+  display: inline-block;
+}
+
+body header nav ul li {
+  list-style: none;
+  float: left;
+  position: relative;
+}
+
+body header nav ul li img {
+  height: 5.75rem;
+  width: auto;
+  display: inline-block;
+  transition: transform .2s;
+}
+
+body header nav ul li img:hover {
+  transform: scale(1.25);
+}
+
+body header nav ul li a#HeadLink {
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  font-family: Kulim Park, sans-serif;
+  color: black;
+  background-color: white;
+  margin: 0 1px 0 0;
+  padding: 1.85rem;
+  min-width: 10rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+body header nav ul li:hover > a#HeadLink {
+  background-color: lightgrey;
+  transition: all 500ms;
+}
+
+body header nav ul li ul {
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: 500ms all;
+  max-height: 0;
+  border-bottom: 1px solid black;
+}
+
+ body header nav ul li:hover > ul {
+  max-height: 700px;
+}
+
+body header nav ul li div#PB_Platz {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+}
+
+
+
+body div#MainContainer h1 {
+  font-size: 34pt;
+  text-align: center;
+  font-family: Kulim Park, sans-serif;
+  color: #393E4D;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+body div#MainContainer p#normal {
+  text-align: center;
+  font-size: 16pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+  padding-bottom: 2.5rem;
+}
+
+body div#MainContainer p#left {
+  text-align: left;
+  font-size: 16pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+body div#MainContainer p#danke {
+  text-align: center;
+  font-size: 22pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+}
+
+body div#MainContainer p#FormularHead {
+  text-align: left;
+  font-size: 16pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+  padding-left: 5rem;
+  padding-top: 10rem;
+}
+
+body #MainContainer a#normalLink {
+  font-size: 16pt;
+  font-family: Kulim Park, sans-serif;
+  text-decoration: none;
+  color: #626B87;
+}
+
+body div#MainContainer div#Formular {
+  height: 50rem;
+  width: 50rem;
+  /* border: 1px solid red; */
+  margin-left: 7rem;
+}
+
+body div#MainContainer div#Formular p#Formular {
+  font-size: 14pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+body div#MainContainer div#Formular textarea#nachricht {
+  height: 15rem;
+  width: 50rem;
+  resize: none;
+}
+
+body div#MainContainer div#Formular a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid black;
+  margin-top: 2rem;
+  display: inline-block;
+  font-family: Kulim Park, sans-serif;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #626B87;
+  background-color: white;
+  border-radius: 2.5rem;
+}
+
+body div#MainContainer div#Platzhalter {
+  height: 8rem;
+  width: auto;
+  /* border: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body div#MainContainer h2 {
+  font-size: 25pt;
+  text-align: center;
+  font-family: Kulim Park, sans-serif;
+  color: #393E4D;
+  padding-bottom: 3rem;
+}
+
+body div#MainContainer .Product h2 {
+  font-size: 25pt;
+  text-align: left;
+  font-family: Kulim Park, sans-serif;
+  color: #393E4D;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+body div#MainContainer div#CEO {
+  height: 50rem;
+  width: auto;
+  /* border: 1px solid orange; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body div#MainContainer div#CEO div#Bild1 {
+  height: 40rem;
+  width: 25rem;
+  /* border: 2px solid blue; */
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+body div#MainContainer div#CEO div#Bild2 {
+  height: 40rem;
+  width: 25rem;
+  /* border: 2px solid blue; */
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+body div#MainContainer div#CEO div#Bild1 img {
+  width: 25rem;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+body div#MainContainer div#CEO div#Bild2 img {
+  width: 25rem;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+body #MainContainer table#sizes {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #MainContainer table#sizes, th, td {
+  font-size: 16pt;
+  font-family: Kulim Park, sans-serif;
+  border: 1px solid black;
+  text-align: center;
+}
+
+body #MainContainer #sizesIMG {
+  margin-left: auto;
+  margin-right: auto;
+  height: 30rem;
+  width: auto;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 5rem;
+}
+
+body #MainContainer #sizesIMG img {
+  height: 300px;
+  width: auto;
+}
+
+body #MainContainer #Hoodies {
+  height: 50rem;
+  width: auto;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+body #MainContainer #Hoodies img {
+  height: 50rem;
+  width: auto;
+}
+
+body #MainContainer ol {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  text-align: left;
+  font-size: 14pt;
+  font-family: Kulim Park, sans-serif;
+}
+
+body #MainContainer .ProductTXT .ProductList {
+  margin-left: 10rem;
+  text-align: left;
+  font-size: 14pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+}
+
+body #MainContainer .ProductTXT #leftKLEIN {
+  font-size: 14pt;
+  font-family: Kulim Park, sans-serif;
+  color: #626B87;
+  margin-left: 8rem;
+  margin-top: 3rem;
+}
+
+body #MainContainer .WelcIMG {
+  height: auto;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+body #MainContainer .Product {
+  /* border: 1px solid green; */
+  width: 80%;
+  height: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #MainContainer .ProductIMG {
+  border: 2px solid black;
+  padding: 5rem;
+  border-radius: 2.5rem;
+  width: 25rem;
+  float: left;
+  margin-top: 3rem;
+}
+
+body #MainContainer .ProductIMG img {
+  height: 250px;
+  width: auto;
+}
+
+body #MainContainer .ProductTXT {
+  border: 2px solid black;
+  border-radius: 2.5rem;
+  height: 62.5rem;
+  width: 45rem;
+  float: right;
+  min-width: 62.5rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body footer {
+  width: auto;
+  height: 24rem;
+  background-color: #1c1e25;
+}
+
+body footer div#FooterText {
+  height: 20rem;
+  width: 100%;
+  /* border: 1px solid pink; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body footer div#FooterText h1 {
+  text-align: center;
+  color: #393E4D;
+  font-family: Kulim Park, sans-serif;
+  font-size: 20pt;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+body footer div#FooterText p {
+  font-family: Kulim Park, sans-serif;
+  font-size: 17pt;
+  color: #393E4D;
+  text-align: center;
+}
+
+body footer div#CopyrightLine {
+  /* border: 1px solid red; */
+  height: 3rem;
+  width: auto;
+}
+
+body footer div#CopyrightLine p {
+  text-align: right;
+  font-family: Kulim Park, sans-serif;
+  color: #393E4D;
+  font-size: 12pt;
+  padding: 1rem;
+}
+
+body footer div#FooterText ul {
+  font-family: Kulim Park, sans-serif;
+  font-size: 14pt;
+  color: #393E4D;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  /* display: inline-block; */
+}
+
+body footer div#FooterText ul li a {
+  text-decoration: none;
+  color: #393E4D;
+}
+
+body footer div#FooterText ul li a:hover {
+  font-size: 16pt;
+  transition: all 250ms;
+}
